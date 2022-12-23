@@ -1,5 +1,10 @@
 <br/>
-<h1>Name of Workspace</h1>
-Members
-Workspace Vendors
+<% @workspaces.each do |workspace| %>
+  <strong><%= workspace.name %></strong>
+  <br/>
+  <%= workspace.domain %>
+<% end %>
+<br/>
+
+
 

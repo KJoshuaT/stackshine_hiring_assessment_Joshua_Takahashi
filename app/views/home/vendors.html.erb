@@ -1,2 +1,17 @@
 <br/>
-<h1>Vendors here<h1>
+<strong><h1>Vendors:<h1></strong>
+  <br/>
+<% @workspace_vendors.each do |workspace_vendor| %>
+  <%= workspace_vendor.name %> <br/>
+  <%= workspace_vendor.description %>
+  <br/>
+  <br/>
+<% end %>
+
+TESTING:
+
+<% @vendor_transactions.each do |vendor_transaction| %>
+  <%= vendor_transaction.description %>
+  <br/>
+  <br/>
+<% end %>
