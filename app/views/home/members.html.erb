@@ -1,8 +1,8 @@
 <br/>
-<h1>Members:</h1> 
+<strong><h1>Members:</h1></strong>
 <br/>
 <% @workspace_members.each do |workspace_member| %>
-    <%= link_to workspace_member.name, home_members_path %> <%# not too sure what to put for path...%> 
+    <%= link_to workspace_member.name, home_members_path(@workspace_member) %> <%# not too sure what to put for path...%> 
     <br/>
     <%= workspace_member.email %>
     <br/>
