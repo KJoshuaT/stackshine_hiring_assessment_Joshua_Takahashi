@@ -1,2 +1,10 @@
 <br/>
-<h1>Members here</h1> 
+<h1>Members:</h1> 
+<br/>
+<% @workspace_members.each do |workspace_member| %>
+    <%= link_to workspace_member.name, home_members_path %> <%# not too sure what to put for path...%> 
+    <br/>
+    <%= workspace_member.email %>
+    <br/>
+    <br/>
+<% end %>

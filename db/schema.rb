@@ -29,7 +29,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_044838) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["workspace_id"], name: "index_workspace_members_on_workspace_id"
   end
 
   create_table "workspace_vendors", force: :cascade do |t|
