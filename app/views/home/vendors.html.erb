@@ -2,7 +2,7 @@
 <strong><h1>Vendors:<h1></strong>
   <br/>
 <% @workspace_vendors.each do |workspace_vendor| %>
-  <%= link_to workspace_vendor.name, home_vendors_path %> 
+  <%= link_to workspace_vendor.name, home_vendors_path(id: workspace_vendor.id) %> 
   <br/>
   <%= workspace_vendor.description %>
   <br/>

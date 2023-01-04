@@ -14,8 +14,8 @@ class HomeController < ApplicationController
   end
 
   def showvendors
-    @workspace_vendors = WorkspaceVendor.find(params[:workspace_vendor_id])
-    @vendor_transactions = VendorTransaction.find(params[:workspace_vendor_id])
+    @workspace_vendors = WorkspaceVendor.find(params[:workspace_id])
+    @vendor_transactions = VendorTransaction.find(params[:workspace_id])
   end
 
   def showmembers
